@@ -23,7 +23,7 @@ def test_finding_no_postalcodes():
     assert hae_postitoimipaikat("Ihantala") == []
 
 
-'''def test_using_mock_data(mocker):
+def test_using_mock_data(mocker):
     mocker.patch("postinumerot.hae_p_numerot", return_value=MOCK_TEST_DATA)
     assert hae_postitoimipaikat("Napapiiri") == ["12345"]
 
@@ -36,4 +36,3 @@ def test_for_smart_post_with_spaces(mocker):
 def test_for_smart_post_without_spaces(mocker):
     mocker.patch("postinumerot.hae_p_numerot", return_value=SPECIAL_CASES)
     assert hae_postitoimipaikat("smartpost") == ["12345", "45678"]
-'''
