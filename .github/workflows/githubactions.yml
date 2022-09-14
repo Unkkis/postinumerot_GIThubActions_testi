@@ -26,4 +26,6 @@ jobs:
       run: |
         pip install coverage
         coverage run -m pytest
+    - name: Get coverage report
+      run: |
         coverage report -m
